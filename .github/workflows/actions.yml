@@ -30,23 +30,18 @@ jobs: #Commandes à exécuter
     steps:
       - name: Code 
         uses: actions/checkout@v4
-        
       - name: Install java
         uses: actions/setup-java@v4
         with:
           distribution: 'oracle'
           java-version: '17'
           cache: maven
-          
       - name: Execute test
         run: mvn test
-        
       - name: Clean older build
         run: mvn clean
-        
       - name: Build project
         run: mvn package
-      
       - name: deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
