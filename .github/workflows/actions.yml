@@ -13,7 +13,6 @@ on:
   #    - main
   #  types:
   #    - opened
-
 jobs: #Commandes à exécuter
   test: 
     runs-on: ubuntu-latest
@@ -49,11 +48,5 @@ jobs: #Commandes à exécuter
           username: edire2362051
           password: n4pN7P9f6s4
           local-dir: ./target/
-          exclude: |
-          **/generated-sources/**
-          **/generated-test-sources/**
-          **/maven-archiver/**
-          **/maven-status/**
-          **/surefire-reports/**
         #env:
         #  ACCESS_TOKEN: {{ secrets.ACCESS_TOKEN}}
