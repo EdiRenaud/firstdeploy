@@ -44,9 +44,10 @@ jobs: #Commandes à exécuter
       - name: deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ftp.edirenaud.site
-          username: edire2362051
-          password: n4pN7P9f6s4
+          server: ftp.edrenapp.site
+          username: c2389011c
+          password: wkW4yaCxCJWHZnZ
           local-dir: ./target/
+          server-dir: public_html/
         #env:
         #  ACCESS_TOKEN: {{ secrets.ACCESS_TOKEN}}
